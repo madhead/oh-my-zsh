@@ -60,6 +60,9 @@ alias mvntc='mvn tomcat:run'
 alias mvnjetty='mvn jetty:run'
 alias mvndt='mvn dependency:tree'
 alias mvns='mvn site'
+alias mci='mvn clean install -DskipTests'
+alias mcit='mvn clean install -DskipITs'
+alias mciit='mvn clean install'
 
 function listMavenCompletions { 
      reply=(
