@@ -73,3 +73,17 @@ function env_default() {
     env | grep -q "^$1=" && return 0 
     export "$1=$2"       && return 3
 }
+
+function switch_java() {
+  if [[ "$1" == "7" ]]; then
+    export JAVA_HOME=${JAVA7_HOME};
+  elif [[ "$1" == "8" ]]; then
+    export JAVA_HOME=${JAVA8_HOME};
+  else
+    echo "Unknown Java version!";
+    return 1;
+  fi
+  export PATH=${PATH/java[0-9]/java$1};
+}
+
+compdef _java_versions switch_java
