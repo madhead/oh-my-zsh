@@ -9,6 +9,7 @@ alias -- -='cd -'
 # Super user
 alias _='sudo'
 alias please='sudo'
+alias fuck='sudo $(fc -ln -1)'
 
 #alias g='grep -in'
 
