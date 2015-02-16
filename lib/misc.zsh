@@ -23,6 +23,8 @@ env_default 'LESS' '-R'
 
 ## super user alias
 alias _='sudo '
+alias please='sudo'
+alias fuck='sudo $(fc -ln -1)'
 
 ## more intelligent acking for ubuntu users
 if (( $+commands[ack-grep] )); then
