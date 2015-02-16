@@ -29,6 +29,8 @@ fi
 
 ## super user alias
 alias _='sudo '
+alias please='sudo'
+alias fuck='sudo $(fc -ln -1)'
 
 ## more intelligent acking for ubuntu users and no alias for users without ack
 if (( $+commands[ack-grep] )); then
