@@ -76,10 +76,7 @@ alias mvnt='mvn test'
 alias mvntc='mvn tomcat:run'
 alias mvntc7='mvn tomcat7:run'
 alias mvn-updates='mvn versions:display-dependency-updates'
-alias mci='mvn clean install -DskipTests'
-alias mcit='mvn clean install -DskipITs'
-alias mciit='mvn clean install'
-
+alias mci='mvn clean install -Dmaven.test.skip=true'
 
 function listMavenCompletions {
   local file new_file
